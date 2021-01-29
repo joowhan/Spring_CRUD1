@@ -18,7 +18,11 @@ public class EmpController {
         
     /*It displays a form to input data, here "command" is a reserved request attribute  
      *which is used to display object data into form  
-     */    
+     */
+    @RequestMapping("/")  
+    public String show(Model m){  
+    	return "index";
+    }
     @RequestMapping("/empform")    
     public String showform(Model m){    
         m.addAttribute("command", new Emp());  
