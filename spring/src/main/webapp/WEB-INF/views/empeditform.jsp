@@ -4,28 +4,31 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
   
         <h1>Edit Employee</h1>  
-       <form:form method="POST" action="../editsave">    
-        <table >    
-        <tr>  
-        <td></td>    
-         <td><form:hidden  path="id" /></td>  
-         </tr>   
-         <tr>    
-          <td>Name : </td>   
-          <td><form:input path="name"  /></td>  
-         </tr>    
-         <tr>    
-          <td>Salary :</td>    
-          <td><form:input path="salary" /></td>  
-         </tr>   
-         <tr>    
-          <td>Designation :</td>    
-          <td><form:input path="designation" /></td>  
-         </tr>   
-           
-         <tr>    
-          <td> </td>    
-          <td><input type="submit" value="Edit Save" /></td>    
-         </tr>    
-        </table>    
+       <form:form method="POST" action="../editsave" enctype="multipart/form-data">    
+       <fieldset>
+			<p>
+				<label for="Id"></label>
+				<form:hidden id="id" path="id" />
+			</p>
+			<p>
+				<label for="Name">Name :</label>
+				<form:input id="name" path="name" />
+			</p>
+			<p>
+				<label for="Salary">Salary :</label>
+				<form:input id="salary" path="salary" />
+			</p>
+			<p>
+				<label for="Designation">Designation :</label>
+				<form:input id="designation" path="designation" />
+			</p>
+			<p>
+				<label for="Image">Image :</label>
+				<form:input id="image" type="file" path="image" name="image" />
+			</p>
+
+			<p>
+				<input type="submit" value="Edit Save" />
+			</p>
+		</fieldset>
        </form:form>   

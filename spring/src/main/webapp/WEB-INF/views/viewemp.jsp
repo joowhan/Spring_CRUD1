@@ -11,7 +11,7 @@
    <td>${emp.id}</td>  
    <td>${emp.name}</td>  
    <td>${emp.salary}</td>  
-   <td>${emp.designation}</td>  
+   <td>${emp.designation}</td>
    <td><a href="editemp/${emp.id}">Edit</a></td>  
    <td><a href="deleteemp/${emp.id}">Delete</a></td>  
    </tr>  

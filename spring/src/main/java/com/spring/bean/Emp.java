@@ -8,7 +8,14 @@ public class Emp {
 	private float salary;
 	private String designation;
 	private Date regdate;
+	private String image;
 	
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
 	public int getId() {
 		return id;
 	}
